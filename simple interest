@@ -1,0 +1,14 @@
+# define function to calculate simple interest
+def simple_interest(p, t, r):
+    # calculate simple interest
+    si = (p * t * r) / 100
+    return si
+
+# get input from user
+p = float(input("Enter the principal amount: "))
+t = float(input("Enter the time period (in years): "))
+r = float(input("Enter the interest rate (as a percentage): "))
+
+# call the function and print the result
+si = simple_interest(p, t, r)
+print("Simple Interest = ", si)
